@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="lg:w-8/12 w-11/12 relative px-4 flex flex-col">
             <div className="grid grid-cols-1 gap-8 text-sm lg:grid-cols-2 lg:gap-0 pb-10">
                 <div className="space-y-4 lg:space-y-8">
-                    <img src={logo} alt='logo' className='h-10 bg-white px-3'/>
+                    <img src={logo} alt='logo' className='h-10'/>
                     <div className={`flex flex-row gap-5 text-xs items-center opacity-50`}>
                         <NavLink to='/'>
                             Home

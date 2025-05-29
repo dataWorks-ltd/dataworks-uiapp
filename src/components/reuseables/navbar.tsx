@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className='flex flex-col lg:w-8/12 w-11/12  relative'>
         <div className='flex flex-row justify-between items-center w-full py-5 lg:py-8'>
           <NavLink  to='/'>
-            <img src={logo} alt='logo' className='h-10 bg-white px-3'/>
+            <img src={logo} alt='logo' className='h-10'/>
           </NavLink>
           <div className="hidden lg:block">
             <div className={`tracking-wide flex flex-row gap-[4rem] text-sm items-center`}>
