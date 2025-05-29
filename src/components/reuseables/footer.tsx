@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
                         <a
                             className="flex h-[35px] items-center justify-center rounded-[4px] px-4 text-xs text-white bg-[#006dad] space-x-2"
-                            href="/services#components"
+                            href="/booking"
                         >
                             <span className="opacity-80">
                             Book a demo
