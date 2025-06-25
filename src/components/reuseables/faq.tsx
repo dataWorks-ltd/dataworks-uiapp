@@ -28,7 +28,7 @@ export default function FaqComponent() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full mb-5 lg:mb-10">
       <div className='flex flex-col gap-5 lg:gap-10 lg:w-8/12 w-11/12 lg:my-10 lg:items-center'>
         <div className="w-full lg:text-3xl text-lg">
           Frequently Asked Questions
