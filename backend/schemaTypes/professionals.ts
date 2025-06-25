@@ -16,35 +16,16 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'mainImageUrl',
-      title: 'Main image',
-      type: 'string',
-    }),
-    defineField({
-      name: 'role',
-      title: 'Role',
-      type: 'string',
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
-    defineField({
-      name: 'typeOf',
-      title: 'Type of professional',
-      type: 'string',
+      name: 'image',
+      title: 'Main Image',
+      type: 'image',
       options: {
-        list: [
-          {title: 'Executive', value: 'executive'},
-          {title: 'Leadership', value: 'leadership'}
-        ], // <-- predefined values
-        layout: 'radio' // <-- defaults to 'dropdown'
+          hotspot: true
       }
     }),
     defineField({
-      name: 'education',
-      title: 'Education',
+      name: 'specialties',
+      title: 'Specialties',
       type: 'array',
       of: [
         {
@@ -52,18 +33,7 @@ export default defineType({
           type: 'string',
         },
       ]
-    }),
-    defineField({
-      name: 'experience',
-      title: 'Experience',
-      type: 'array',
-      of: [
-        {
-          title: 'title',
-          type: 'string',
-        },
-      ]
-    }),
+    })
   ],
   preview: {
     select: {

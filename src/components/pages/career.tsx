@@ -21,7 +21,7 @@ const Career = () => {
                   <div className="flex flex-col items-center gap-8">
                     <p className="text-sm md:w-10/12">
                       <span className="text-gray-600 md:whitespace-pre-wrap">
-                        DATAWORKS is committed to providing and delivering the
+                        DataNinjas is committed to providing and delivering the
                         highest quality of technology consulting service to its
                         clients, which means hiring elite consultants capable of
                         delivering extraordinary results.
@@ -56,7 +56,7 @@ const Career = () => {
           <div className="flex flex-row gap-3 lg:text-lg items-center">
             <BsEnvelopeAt className="text-[#006dad]"/>
 
-            <div className="font-semibold">info@dataworks.ltd</div>
+            <div className="font-semibold">info@dataninjas.ltd</div>
           </div>
         </div>
       </div>

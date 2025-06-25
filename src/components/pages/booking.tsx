@@ -124,7 +124,7 @@ const Booking = () => {
 
           <div className="flex w-full mt-5">
             <button
-              className="flex cursor-pointer h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+              className="flex cursor-pointer h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
               onClick={handleSubmit}
               disabled={isSubmitting}
             >

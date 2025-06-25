@@ -5,4 +5,5 @@ export { default as News } from './updates';
 export { default as NewsDetail } from './updatesDetail';
 export { default as Services } from './services';
 export { default as Booking } from './booking';
+export { default as MeetTheTeam } from './meetTheTeam';
 export { default as NotFound } from './notFound';

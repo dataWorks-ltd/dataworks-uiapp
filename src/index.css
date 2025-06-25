@@ -45,6 +45,13 @@ code {
   background-blend-mode: saturation;
 }
 
+.bg-pattern-2 {
+  background-image: url('./assets/images/bg-pattern\(dark-mode\)2.svg');
+  background-size: cover;
+  background-clip: initial;
+  background-blend-mode: saturation;
+}
+
 .bg-pattern-white {
   background-image:linear-gradient(transparent 10%, rgb(249,250,251) 100%), url('./assets/images/bg-pattern\(dark-mode\).svg');
   background-size: cover;

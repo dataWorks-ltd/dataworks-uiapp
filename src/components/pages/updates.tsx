@@ -78,7 +78,7 @@ const News = () => {
         <div className="flex flex-col gap-5">
             <p className="text-gray-500">~/blog</p>
             <div className="text-2xl lg:text-[2.25rem] lg:leading-[50px]">
-              Keep up to date with the <br className="lg:block hidden"/> latest news about DATAWORKS.
+              Keep up to date with the <br className="lg:block hidden"/> latest news about DataNinjas.
             </div>
             <div className='bg-white p-2 px-5 mt-5 text-sm flex flex-row items-center lg:w-1/2 w-3/4 font-inter border rounded-full text-center'>
               <input type="text" placeholder="Search for article" value={searchParams.searchTerm}
@@ -93,8 +93,8 @@ const News = () => {
       <div className='flex flex-col items-center bg-white lg:w-8/12 w-11/12 z-30'>
         <div className='grid lg:grid-cols-2 w-full lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
           {!loading && newsList?.map((post, index) => (
-            <NavLink to={`/updates/${post?._id}`} className='rounded-[4px] text-left h-full' key={post._id}>
-              <div className="rounded-[4px] border">
+            <NavLink to={`/updates/${post?._id}`} className='rounded-sm text-left h-full' key={post._id}>
+              <div className="rounded-sm border">
                 <img src={post?.mainImageUrl} className="lg:h-[30rem] w-full object-cover aspect-auto" alt={`news-${index}`} />
               </div>
               <div className='mb-2 mt-4 text-sm text-gray-500'>

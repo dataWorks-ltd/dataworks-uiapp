@@ -49,7 +49,7 @@ const About = () => {
                     </p>
                     <div className="flex">
                       <NavLink
-                        className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+                        className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
                         to="/booking"
                       >
                         <span className="opacity-80">
@@ -89,7 +89,7 @@ const About = () => {
             <div className="w-full flex justify-end">
               <div className="lg:w-4/5 border border-gray-300 border-l-8 rounded-md p-5 py-7 text-sm flex flex-col relative gap-4">
                 <div className="max-w-[430px] leading-6">
-                  DATAWORKS consultants quickly adapted, kept the project on track,
+                  DataNinjas consultants quickly adapted, kept the project on track,
                   and excelled in technical skills and stakeholder engagement
                   for data collection and validation.
                 </div>
@@ -115,7 +115,7 @@ const About = () => {
             <div className="w-full flex">
               <div className="lg:w-4/5 border border-[#b3e6c7] border-l-8 rounded-md p-5 py-7 text-sm flex flex-col relative gap-4">
                 <div className="max-w-[500px] leading-6">
-                  DATAWORKS's AI-driven approach was a game-changer for us.Their team
+                  DataNinjas's AI-driven approach was a game-changer for us.Their team
                   not only analysed our data but also implemented machine
                   learning models that gave us predictive insights, allowing
                   proactive business decisions.
@@ -196,10 +196,10 @@ const About = () => {
       <div className="flex flex-col gap-7 lg:w-8/12 w-11/12 pb-20">
         <div className="flex flex-col gap-4 w-full">
           <div className="text-center text-3xl lg:text-left lg:text-[2.4rem] lg:leading-[3rem]">
-            Why DATAWORKS?
+            Why DataNinjas?
           </div>
           <div className="text-base lg:text-left text-center text-gray-500 max-w-[400px] leading-6">
-            DATAWORKS delivers quick wins while building practical, long-term
+            DataNinjas delivers quick wins while building practical, long-term
             solutions that stand the test of time.
           </div>
         </div>

@@ -46,3 +46,4 @@ export { default as DftLogo } from '../assets/images/dft logo_bw.png';
 export { default as DiscoveryLogo } from '../assets/images/discovery_bw.png';
 export { default as RollsroyceLogo } from '../assets/images/rolls royce_bw.png';
 export { default as GskLogo } from '../assets/images/gsk_bw.svg';
+export { default as placeholderImg } from '../assets/images/placeholder-img.jpg';

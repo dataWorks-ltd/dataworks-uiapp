@@ -59,7 +59,7 @@ const NewsDetail = () => {
         <div className='h-full flex flex-row justify-center lg:w-8/12 w-11/12'>
           <div className="flex lg:w-5/6 md:w-2/3 flex-col pb-16 md:pb-32 md:pr-16 lg:min-h-[75vh] md:border-r">
             <div className='flex flex-col gap-10 items-center w-full'>
-              <img src={postDetail?.mainImageUrl} className="-mt-16 rounded-[4px]" alt={`news`} />
+              <img src={postDetail?.mainImageUrl} className="-mt-16 rounded-sm" alt={`news`} />
               <div className='w-full font-inter leading-relaxed text-gray-600'>
                 <BlockText blocks={postDetail?.body} />
               </div>
@@ -79,7 +79,7 @@ const NewsDetail = () => {
                 </div>
               </div>
               <div className="mt-6 flex w-full flex-col items-start border-t pt-6">
-                <h5 className="test-base pr-3 font-mono text-gray-700">Try DATAWORKS for free</h5>
+                <h5 className="test-base pr-3 font-mono text-gray-700">Try DataNinjas for free</h5>
                 <p className="pt-2 text-sm text-gray-500 font-inter">No sampling. No hidden fees. <br/>All your event data, all the time. </p>
               </div>
             </div>
@@ -94,8 +94,8 @@ const NewsDetail = () => {
           </div>
           <div className='grid lg:grid-cols-3 lg:gap-[4rem] gap-5 lg:mt-10 mt-5'>
             {postDetailMore?.map((post, index) => (
-              <NavLink to={`/updates/${post?._id}`} className='rounded-[4px] text-left h-full' key={post._id}>
-                <div className="rounded-[4px] border">
+              <NavLink to={`/updates/${post?._id}`} className='rounded-sm text-left h-full' key={post._id}>
+                <div className="rounded-sm border">
                   <img src={post?.mainImageUrl} className="lg:h-[15rem] w-full object-cover aspect-auto" alt={`news-${index}`} />
                 </div>
                 <div className='mb-2 mt-4 text-sm text-gray-500'>

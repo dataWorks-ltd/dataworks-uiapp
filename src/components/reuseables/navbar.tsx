@@ -26,13 +26,13 @@ const Navbar = () => {
 
   return (
     <nav className={`flex flex-col fixed items-center w-full z-50 bg-black text-white ${isScrolled ? 'border-b border-gray-300' : ''}`}>
-      <div className='flex flex-col lg:w-8/12 w-11/12  relative'>
-        <div className='flex flex-row justify-between items-center w-full py-5 lg:py-8'>
+      <div className='flex flex-col lg:w-8/12 w-11/12 relative'>
+        <div className='flex flex-row justify-between items-center w-full py-5'>
           <NavLink  to='/'>
             <img src={logo} alt='logo' className='h-10'/>
           </NavLink>
           <div className="hidden lg:block">
-            <div className={`tracking-wide flex flex-row gap-[4rem] text-sm items-center`}>
+            <div className={`flex flex-row gap-5 text-sm items-center justify-end`}>
               <NavLink to='/'>
                 Home
               </NavLink>
@@ -44,6 +44,9 @@ const Navbar = () => {
               </NavLink>
               <NavLink to='/careers'>
                 Careers
+              </NavLink>
+              <NavLink to='/meet-the-team'>
+                Meet the Team
               </NavLink>
               <NavLink to='/updates'>
                 Updates
@@ -66,7 +69,7 @@ const Navbar = () => {
                 </NavLink>
                 <i onClick={() => SetShowMenu(false)} className='fi fi-rr-cross text-white cursor-pointer'></i>
               </div>
-              <div className='flex flex-col tracking-wide w-full gap-[2rem] uppercase p-5 text-white'>
+              <div className='flex flex-col tracking-wide w-full gap-5 text-sm p-5 text-white'>
                 <NavLink onClick={() => SetShowMenu(false)} to='/'>
                   Home
                 </NavLink>
@@ -78,6 +81,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink onClick={() => SetShowMenu(false)} to='/careers'>
                   Careers
+                </NavLink>
+                <NavLink onClick={() => SetShowMenu(false)} to='/meet-the-team'>
+                  Meet the Team
                 </NavLink>
                 <NavLink onClick={() => SetShowMenu(false)} to='/updates'>
                   Updates

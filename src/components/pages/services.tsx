@@ -56,7 +56,7 @@ const Services = () => {
                     </p>
                     <div className="flex">
                       <NavLink
-                        className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+                        className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
                         to="/booking"
                       >
                         <span className="opacity-80">
@@ -120,7 +120,7 @@ const Services = () => {
 
           <div className="flex">
             <NavLink
-              className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+              className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
               to="/booking"
             >
               <span className="opacity-80">
@@ -208,7 +208,7 @@ const Services = () => {
 
           <div className="flex">
             <NavLink
-              className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+              className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
               to="/booking"
             >
               <span className="opacity-80">
@@ -295,7 +295,7 @@ const Services = () => {
 
           <div className="flex">
             <NavLink
-              className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+              className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
               to="/booking"
             >
               <span className="opacity-80">
@@ -382,7 +382,7 @@ const Services = () => {
 
           <div className="flex">
             <NavLink
-              className="flex h-[40px] items-center justify-center rounded-[4px] px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
+              className="flex h-[40px] items-center justify-center rounded-sm px-4 text-sm  text-white bg-[#006dad] hover:!bg-[#006dad] hover:shadow-inner shadow-sm space-x-2"
               to="/booking"
             >
               <span className="opacity-80">
@@ -518,7 +518,7 @@ const Services = () => {
       <div className="grid lg:grid-cols-2 gap-10 lg:w-8/12 w-11/12 items-center">
         <div className="flex flex-col w-full">
           <h2 className="text-center text-3xl lg:text-left lg:text-4xl lg:leading-[50px]">
-            Why DATAWORKS ?
+            Why DataNinjas ?
           </h2>
           <p className="text-sm mx-auto max-w-[480px] pt-2 text-center text-gray-500 lg:mx-0 lg:text-left">
             With over 20+ years in the data industry, we have experience solving
@@ -550,7 +550,7 @@ const Services = () => {
             overwhelmed.
           </div>
           <p className="text-base mx-auto pt-2 text-center text-gray-500 lg:text-left">
-            DATAWORKS delivers clarity and results.
+            DataNinjas delivers clarity and results.
           </p>
         </div>
       </div>

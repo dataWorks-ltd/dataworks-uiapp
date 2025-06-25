@@ -5,7 +5,7 @@ import { AlertProvider } from '../utils/notification/alertcontext';
 import Alert from '../utils/notification/alert';
 
 // import Onboarding from '../components/onboarding/index'
-import {About, Booking, Career, Home, News, NewsDetail, NotFound, Services} from '../components/pages/_route';
+import {About, Booking, Career, Home, MeetTheTeam, News, NewsDetail, NotFound, Services} from '../components/pages/_route';
 import Navbar from '../components/reuseables/navbar';
 import Footer from '../components/reuseables/footer';
 import { useRef, useEffect } from 'react';
@@ -34,6 +34,7 @@ const IndexRoutes = () => {
           <Route path="/services" element={<Services/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/careers" element={<Career/>} />
+          <Route path="/meet-the-team" element={<MeetTheTeam/>} />
           <Route path="/booking" element={<Booking/>} />
           <Route path="/*" element={<NotFound/>} />
         </Routes>

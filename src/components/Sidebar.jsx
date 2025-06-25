@@ -69,7 +69,7 @@ const Sidebar = ({closeToggle}) => {
           </div>
           <div className='flex flex-row gap-3 items-center'>
             <BsEnvelopeFill className='text-orange-500' />
-            <a href="mailto:info@dataworks.ltd" className='text-[.7rem]'>info@dataworks.ltd</a>
+            <a href="mailto:info@dataninjas.ltd" className='text-[.7rem]'>info@dataninjas.ltd</a>
           </div>
         </div>
       </div>

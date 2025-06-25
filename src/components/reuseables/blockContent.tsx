@@ -7,44 +7,41 @@ const formatImage = (value: string) => {
 };
 
 const TextWithBreaks = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <>
-      {React.Children.toArray(children).flatMap((child, index) => {
-        if (typeof child === "string") {
-          if (child.trim() === "") {
-            return <br key={`br-${index}`} />;
-          }
-          return child.split("\n").flatMap((text, i) => [
-            i > 0 && <br key={`br-${index}-${i}`} />,
-            text,
-          ]);
+  const nodes = React.Children.toArray(children).flatMap((child, index) => {
+    if (typeof child === 'string') {
+      if (child.trim() === "") {
+        return <br key={`br-${index}`} />;
+      }
+      return child.split('\n').flatMap((text, i) => [
+        i > 0 && <br key={`br-${index}-${i}`} />,
+        text,
+      ]);
+    }
+
+    if (React.isValidElement(child)) {
+      const element = child as React.ReactElement<any>;
+
+      if (element.type === 'span') {
+        const spanText = element.props.text || element.props.children;
+        if (typeof spanText === 'string' && spanText.trim() === "") {
+          return <br key={`br-${index}`} />;
         }
+      }
 
-        if (React.isValidElement(child)) {
-          const element = child as React.ReactElement<any>;
+      const newProps = {
+        ...element.props,
+        children: element.props.children ? (
+          <TextWithBreaks>{element.props.children}</TextWithBreaks>
+        ) : element.props.children,
+      };
+      return React.cloneElement(element, newProps);
+    }
 
-          if (element.type === "span") {
-            const spanText = element.props.text || element.props.children;
-            if (typeof spanText === "string" && spanText.trim() === "") {
-              return <br key={`br-${index}`} />;
-            }
-          }
+    return child;
+  });
 
-          const newProps = {
-            ...element.props,
-            children: element.props.children ? (
-              <TextWithBreaks>{element.props.children}</TextWithBreaks>
-            ) : (
-              element.props.children
-            ),
-          };
-          return React.cloneElement(element, newProps);
-        }
-
-        return child;
-      })}
-    </>
-  );
+  // ✅ Always wrap the output in a <span>
+  return <span>{nodes}</span>;
 };
 
 

@@ -5,6 +5,16 @@ type searchParams = {
   searchTerm?: string,
 }
 
+export const faqsQuery = () => {
+  const query = `*[_type == "faq"] | order(_createdAt desc){
+    _id,
+    title,
+    body,
+    _createdAt
+  }`;
+  return query;
+};
+
 export const testimonalsQuery = () => {
   const query = `*[_type == "testimonal"] | order(_createdAt desc){
     _id,
@@ -16,33 +26,13 @@ export const testimonalsQuery = () => {
   return query;
 };
 
-export const professionalDetailQuery = (professionalId: string) => {
-  const query = `*[_type == "professional" && name == '${professionalId}']{
+export const professionalListQuery = () => {  
+  const query = `*[_type == "professional"]{
     _id,
     name,
     title,
-    body,
-    mainImageUrl,
-    typeOf,
-    role,
-    education,
-    experience,
-    _createdAt
-  }`;
-  return query;
-};
-
-export const professionalListQuery = (type: string) => {  
-  const query = `*[_type == "professional" && typeOf == '${type}' ]{
-    _id,
-    name,
-    title,
-    body,
-    mainImageUrl,
-    typeOf,
-    role,
-    education,
-    experience,
+    "imageUrl": image.asset->url,
+    specialties,
     _createdAt
   }`;
   return query;
