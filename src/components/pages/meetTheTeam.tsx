@@ -73,7 +73,7 @@ const MeetTheTeam = () => {
               <div className="md:px-8 lg:w-4/5 text-center">
                 <div className="relative items-center z-40 flex flex-col space-y-3">
                   <div className="flex flex-col w-3/4 items-center">
-                    <div className="lg:text-3xl text-2xl w-full leading-tight md:!mb-2 md:text-[48px]">
+                    <div className="lg:text-5xl text-2xl w-full leading-tight md:!mb-2 md:text-[48px]">
                       Meet the Experts <br className="hidden lg:block"/> Behind <span className="text-[#006dad]">the Data</span>
                     </div>
                   </div>
