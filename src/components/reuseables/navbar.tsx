@@ -36,11 +36,11 @@ const Navbar = () => {
               <NavLink to='/'>
                 Home
               </NavLink>
-              <NavLink to='/services'>
-                Services
-              </NavLink>
               <NavLink to='/about'>
                 About us
+              </NavLink>
+              <NavLink to='/services'>
+                Services
               </NavLink>
               <NavLink to='/careers'>
                 Careers
@@ -73,11 +73,11 @@ const Navbar = () => {
                 <NavLink onClick={() => SetShowMenu(false)} to='/'>
                   Home
                 </NavLink>
-                <NavLink onClick={() => SetShowMenu(false)} to='/services'>
-                  Services
-                </NavLink>
                 <NavLink onClick={() => SetShowMenu(false)} to='/about'>
                   About us
+                </NavLink>
+                <NavLink onClick={() => SetShowMenu(false)} to='/services'>
+                  Services
                 </NavLink>
                 <NavLink onClick={() => SetShowMenu(false)} to='/careers'>
                   Careers

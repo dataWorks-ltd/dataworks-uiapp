@@ -7,7 +7,7 @@ import {
   CloudDataGif,
   databrickImage,
   dbtImage,
-  ectcGif,
+  dataworksGif,
   fivetranImage,
   gcloudImage,
   IconEight,
@@ -81,7 +81,7 @@ const Services = () => {
         <div className="order-1 md:order-1 flex justify-center items-center">
           <img
             src={architectureGif}
-            className="opacity-50 max-h-[20rem] lg:max-h-[25rem]"
+            className="max-h-[20rem] lg:max-h-[30rem]"
             alt="background"
           />
         </div>
@@ -134,7 +134,7 @@ const Services = () => {
       </div>
       <div className="flex flex-col items-center bg-[#fefcfc] gap-3 w-full py-16">
         <div className="grid scroll-mt-32 grid-cols-1 items-start gap-16 md:grid-cols-2 md:gap-16 lg:w-8/12 w-11/12">
-          <div className="flex flex-col text-sm mx-auto lg:max-w-[480px] space-y-2 lg:mx-0 lg:max-w-none order-1 md:order-1">
+          <div className="flex flex-col text-sm mx-auto lg:max-w-[480px] space-y-2 lg:mx-0 order-1 md:order-1">
             {[
               "Integrate data from a multitude of data sources and types",
               "Handle complex data like images, videos, documents, or a combination of these.",
@@ -169,7 +169,7 @@ const Services = () => {
         <div className="order-1 md:order-1 flex justify-center items-center">
           <img
             src={biAnalysisGif}
-            className="opacity-50 max-h-[20rem] lg:max-h-[25rem]"
+            className="max-h-[20rem] lg:max-h-[30rem]"
             alt="background"
           />
         </div>
@@ -257,7 +257,7 @@ const Services = () => {
         <div className="order-1 md:order-1 flex justify-center items-center">
           <img
             src={CloudDataGif}
-            className="opacity-50 max-h-[20rem] lg:max-h-[25rem]"
+            className="max-h-[20rem] lg:max-h-[30rem]"
             alt="background"
           />
         </div>
@@ -344,7 +344,7 @@ const Services = () => {
         <div className="order-1 md:order-1 flex justify-center items-center">
           <img
             src={AIGif}
-            className="opacity-50 max-h-[20rem] lg:max-h-[25rem]"
+            className="max-h-[20rem] lg:max-h-[30rem]"
             alt="background"
           />
         </div>
@@ -533,7 +533,7 @@ const Services = () => {
           <img
             alt="[object Object] Illustration"
             loading="lazy"
-            src={ectcGif}
+            src={dataworksGif}
           />
         </div>
       </div>

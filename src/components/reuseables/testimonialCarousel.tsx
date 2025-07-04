@@ -35,7 +35,7 @@ export default function TestimonialCarousel() {
   return (
     <div className="flex items-center justify-center w-full">
       <div className="flex flex-nowrap relative items-center justify-center lg:space-x-4 w-full overflow-hidden">
-        <div className="w-[30rem] opacity-60 transition-opacity duration-300 hidden md:block">
+        <div className="w-[30rem]  transition-opacity duration-300 hidden md:block">
           {testimonials.length > 0 && (
             <div className="bg-[#fefcfc] flex flex-col items-center border border-gray-300 rounded-lg p-4 shadow-md">
               <img
@@ -86,7 +86,7 @@ export default function TestimonialCarousel() {
         </div>
 
         {/* Next Testimonial */}
-        <div className="w-[30rem] opacity-60 transition-opacity duration-300 hidden md:block">
+        <div className="w-[30rem]  transition-opacity duration-300 hidden md:block">
           {testimonials.length > 0 && (
             <div className="bg-[#fefcfc] flex flex-col items-center border border-gray-300 rounded-lg p-4 shadow-md">
               <img

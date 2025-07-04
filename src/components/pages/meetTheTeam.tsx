@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import {
   AirfranceLogo,
   BarclayLogo,
@@ -128,7 +128,7 @@ const MeetTheTeam = () => {
           <div className="relative flex flex-col pt-5 item-center w-full">
             <div className="grid lg:grid-cols-3 gap-10 justify-center items-center w-full mb-10 lg:mb-0">
                {teamList?.map((member, index) => (
-                <div className="w-64 overflow-hidden flex flex-col items-center">
+                <div key={index} className="w-64 overflow-hidden flex flex-col items-center">
                   {/* Image Section */}
                   <div className="w-full h-64">
                     <img

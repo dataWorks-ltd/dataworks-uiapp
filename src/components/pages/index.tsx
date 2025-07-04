@@ -5,7 +5,7 @@ import TestimonialCarousel from "../reuseables/testimonialCarousel";
 import {
   AirfranceLogo,
   BarclayLogo,
-  ectcGif,
+  dataworksGif,
   dashboardImage,
   DftLogo,
   DiscoveryLogo,
@@ -17,7 +17,7 @@ import {
   IconSix,
   IconThree,
   IconTwo,
-  image1,
+  experienceGif,
   LloydLogo,
   RollsroyceLogo,
   SendUpIcon,
@@ -214,10 +214,10 @@ const Home = () => {
           <img
             alt="[object Object] Illustration"
             loading="lazy"
-            className="opacity-60"
+            className=""
             decoding="async"
             data-nimg="1"
-            src={image1}
+            src={experienceGif}
           />
         </div>
       </div>
@@ -272,10 +272,10 @@ const Home = () => {
           <img
             alt="[object Object] Illustration"
             loading="lazy"
-            className="opacity-60"
+            className=""
             decoding="async"
             data-nimg="1"
-            src={ectcGif}
+            src={dataworksGif}
           />
         </div>
       </div>
